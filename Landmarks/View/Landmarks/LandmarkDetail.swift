@@ -13,8 +13,7 @@ struct LandmarkDetail: View {
     
     var landmarkIndex: Int {
         modelData.landmarks.firstIndex(where: {
-            $0.id == landmark.id
-        })!
+                                        $0.id == landmark.id })!
     }
     
     var body: some View {
@@ -22,6 +21,7 @@ struct LandmarkDetail: View {
             MapView(coordinate: landmark.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
+            
             CircleImage(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)

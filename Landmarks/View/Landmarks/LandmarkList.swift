@@ -16,10 +16,10 @@ struct LandmarkList: View {
             (!showFavoritesOnly || lanmark.isFavorite)
         }
     }
+    
     var body: some View {
         NavigationView {
             List {
-                
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites only")
                 }
@@ -39,12 +39,11 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-//        ForEach(["iPhone SE (2nd generation)", "iPhone 12 mini"], id: \.self) { deviceName in
-            LandmarkList()
-                .environmentObject(ModelData())
-//                .previewDevice(PreviewDevice(rawValue: deviceName))
-//                .previewDisplayName(deviceName)
-        }
-        
+        //        ForEach(["iPhone SE (2nd generation)", "iPhone 12 mini"], id: \.self) { deviceName in
+        LandmarkList()
+            .environmentObject(ModelData())
+        //                .previewDevice(PreviewDevice(rawValue: deviceName))
+        //                .previewDisplayName(deviceName)
     }
-//}
+}
+

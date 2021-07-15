@@ -137,7 +137,6 @@
 		74A3BB012685E713001C4142 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
-				74A3BC3A2690B0CB001C4142 /* hikeData.json */,
 				74A3BB022685E713001C4142 /* LandmarksApp.swift */,
 				74A3BB1D2685FED9001C4142 /* View */,
 				74A3BB1E2685FEF4001C4142 /* Model */,
@@ -161,11 +160,12 @@
 			isa = PBXGroup;
 			children = (
 				74A3BB042685E713001C4142 /* ContentView.swift */,
+				74A3BD0E26933AFE001C4142 /* Categories */,
+				74A3BB2926873079001C4142 /* Landmarks */,
 				745253A9269700EF0004162F /* PageView */,
 				745253852694969F0004162F /* Profiles */,
-				74A3BD0E26933AFE001C4142 /* Categories */,
 				74A3BB6B268E25FF001C4142 /* Bages */,
-				74A3BB2926873079001C4142 /* Landmarks */,
+				74A3BC3E2690B309001C4142 /* Hikes */,
 				74A3BB282687304E001C4142 /* Helpers */,
 			);
 			path = View;
@@ -185,8 +185,8 @@
 		74A3BB1F2685FF0B001C4142 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				74A3BC3E2690B309001C4142 /* Hikes */,
 				74A3BB172685F978001C4142 /* landmarkData.json */,
+				74A3BC3A2690B0CB001C4142 /* hikeData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CategoryRow: View {
     var categoryName: String
-    var items: [Landmark
-    ]
+    var items: [Landmark]
+    
     var body: some View {
         VStack {
             Text(categoryName)

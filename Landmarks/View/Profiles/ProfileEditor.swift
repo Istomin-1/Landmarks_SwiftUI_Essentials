@@ -23,9 +23,11 @@ struct ProfileEditor: View {
                 Divider()
                 TextField("Username", text: $profile.userName)
             }
+            
             Toggle(isOn: $profile.prefersNotifications) {
                 Text("Enable Notifications").bold()
             }
+            
             VStack(alignment: .leading, spacing: 20) {
                 Text("Seasonal Photo").bold()
                 
@@ -36,6 +38,7 @@ struct ProfileEditor: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
             }
+            
             DatePicker(selection: $profile.goalDate, in: dateRange, displayedComponents: .date) {
                 Text("Goal Date").bold()
             }

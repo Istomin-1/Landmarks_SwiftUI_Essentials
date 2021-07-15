@@ -23,7 +23,6 @@ struct ContentView: View {
                 }
                 .tag(Tab.featured)
             
-            
             LandmarkList()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
@@ -32,8 +31,6 @@ struct ContentView: View {
         }
     }
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

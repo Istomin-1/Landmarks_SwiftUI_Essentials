@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FeatureCard: View {
     var landmark: Landmark
-
+    
     var body: some View {
         landmark.featureImage?
             .resizable()
@@ -19,7 +19,6 @@ struct FeatureCard: View {
 }
 
 struct TextOverlay: View {
-    
     var landmark: Landmark
     
     var gradient: LinearGradient {
@@ -41,7 +40,6 @@ struct TextOverlay: View {
         }
         .foregroundColor(.white)
     }
-    
 }
 
 struct FeatureCard_Previews: PreviewProvider {
